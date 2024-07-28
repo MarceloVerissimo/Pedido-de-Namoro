@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+      <link rel="stylesheet" href="estilo.css">
+    </head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Namoro</title>
+    <style>
+        body {
+            background-color: pink;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            color: #ff3366;
+        }
+
+     </style>
+    <body>
+        <div class="container">
+            <h1>Esse é um Pedido de Namoro Especial</h1>
+            <p>Olá Amorzinho! ♥ </p>
+            <p>Você tem sido minha fonte de inspiração e vontade de continuar praticando e melhorando.</p>
+            <p>Desde que te conheci, você tem iluminado mais os meus dias e feito eles ficarem leves.</p>
+            <p>E você não tem ideia do quão importante tem sido pra mim. Essa é uma forma de expressar meu sentimento.</p>
+            <p>Você aceita namorar comigo?</p>
+            
+            <button
+          class="meubotao"
+          id="btn-yes"
+          onclick="openYoutube()"
+        
+          
+        >
+          Sim
+        </button>
+        <button
+          style="padding: 10px; width: 100px; cursor: pointer; background-color: purple; border-radius: 10px; border: none;"
+          id="btn-no"
+        >
+          Não
+        </button>
+        </div>
+        <script>
+          const element = document.getElementById("btn-no");
+          element.addEventListener("mouseenter", () => {
+            const x = Math.floor(Math.random() * window.innerWidth);
+            const y = Math.floor(Math.random() * window.innerHeight);
+            element.style.position = "absolute";
+            element.style.left = x + "px";
+            element.style.top = y + "px"; 
+          });
+
+          function openYoutube() {
+            window.open("https://www.youtube.com/watch?v=AH496KQzG9k");
+        }
+
+
+
+                
+        </script>
+    </body>
+</html>
